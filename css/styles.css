@@ -6,6 +6,9 @@
 	font-size:1.3263vw;
 	font-family: "Microsoft Yahei";
 }
+a{
+    text-decoration:none;
+}
 body,html{
     height:100%;
 }
@@ -25,8 +28,6 @@ body,html{
     height:10%;
 }
 .page >.bg{
-    /*不能设置为这种定位*/
-    /*position:absolute;*/
     width:100%;
     height:100%;
     z-index:-1;
@@ -40,8 +41,7 @@ body,html{
     top:0;
     left:0;
 }
-.page>.words{
-    
+.page>.words{ 
     position: absolute;
     top:23.57%;
     left:0;
@@ -61,6 +61,7 @@ body,html{
     background:url("../images/logo.png") no-repeat center top;
     background-size: 100%;
 }
+/*arrow*/
 .page>.arrow{
     width:3.4482vw;
     height:1.7964vh;
@@ -74,10 +75,11 @@ body,html{
     -webkit-transform:rotate(-45deg);
     transform: rotate(-45deg);
     background: #ffffff;
-    box-shadow: 3.8vw 0 #ffffff,7.6vw 0 #ffffff,0 -2vh #ffffff,0 -4vh #ffffff;
+    box-shadow: 3.8vw 0 #ffffff,7.6vw 0 #ffffff,0 -2.2vh #ffffff,0 -4.4vh #ffffff;
     -webkit-animation:arrow 2s linear infinite;
     animation:arrow 2s linear infinite;
 }
+/*arrow关键帧*/
 @keyframes arrow{
     0%{
         transform: rotate(-45deg) translate(0,0);
@@ -96,6 +98,7 @@ body,html{
     background:url("../images/pg1_bg.png") no-repeat center center #e81305;
     background-size: 100%;
 }
+/*点我揭秘*/
 #page1>.p1_secrete{
     display:block;
     width:25.4642vw;
@@ -154,10 +157,62 @@ body,html{
     background: url("../images/pg2_spend.png") no-repeat center center;
     background-size: 100%;
 }
-
+/*页面二中的label的动画*/
+#page2 .p2_anima1{
+    width:28.2493vw;
+    height:20.9580vh;
+    position: absolute;
+    top:42.06%;
+    left:-120px;//这里需要改动一下
+}
+#page2 .p2_anima1_on{
+    left:16.18%;
+    transition:0.5s 1s;
+}
+/*动画2有点问题，待解决*/
+#page2 .p2_anima2{
+    width:71.6180vw;
+    height: 42.0658vh;
+    position: absolute;
+    top:50.3%;
+    right:11.67%;
+}
+/*#page2 .p2_anima2_on{
+    left:11.67%
+    transition:0.5s 1s
+}*/
+@keyframes move{
+    0%{
+            transform: scale(0);
+        }
+        30%{
+            transform: scale(1.2);
+        }
+        40%{
+            transform: scale(0.8);
+        }
+        50%{
+            transform: scale(1.15);
+        }
+        60%{
+            transform: scale(0.9);
+        }
+        70%{
+            transform: scale(1.1);
+        }
+        80%{
+            transform: scale(0.95);
+        }
+        90%{
+            transform: scale(1.05);
+        }
+        100%{
+            transform: scale(1);
+        }
+}
 #page2>.arrow{
     background: #ffbf19;
-    box-shadow: 3.8vw 0 #ffbf19,7.6vw 0 #ffbf19,0 -2vh #ffbf19,0 -4vh #ffbf19;
+    box-shadow: 3.8vw 0 #ffbf19,7.6vw 0 #ffbf19,0 -2.2vh #ffbf19,0 -4.4vh #ffbf19;
 }
 /*page3*/
 #page3>.bg{
@@ -170,9 +225,27 @@ body,html{
     background: url("../images/pg3_save.png") no-repeat center center;
     background-size: 100%;
 }
+#page3 .p3_anima1{
+    width:28.2493vw;
+    height:20.9580vh;
+    position: absolute;
+    top:42.06%;
+    left:-120px;//这里单位需要改动一下
+}
+#page3 .p3_anima1_on{
+    left:10%;
+    transition:0.5s 1s;
+}
+#page3 .p3_anima2{
+    width:66.5782vw;
+    height:46.2574vh;
+    position: absolute;
+    top:39.07%;
+    left:20.42%;
+}
 #page3>.arrow{
     background: #efef00;
-    box-shadow: 3.8vw 0 #efef00,7.6vw 0 #efef00,0 -2vh #efef00,0 -4vh #efef00;
+    box-shadow: 3.8vw 0 #efef00,7.6vw 0 #efef00,0 -2.2vh #efef00,0 -4.4vh #efef00;
 }
 /*page4*/
 #page4>.bg{
@@ -185,9 +258,33 @@ body,html{
     background: url("../images/pg4_buy.png") no-repeat center center;
     background-size: 100%;
 }
+#page4 .p4_anima1{
+    width:28.2493vw;
+    height:20.9580vh;
+    position: absolute;
+    top:42.06%;
+    left:-120px;//这里单位需要改动一下
+}
+#page4 .p4_anima2{
+    width: 37.9310vw;
+    height: 26.1976vh;
+    position: absolute;
+    top:48.05%;
+    right:13.52%;
+}
+#page4 .p4_anima3{
+    width: 64.1909vw;
+    height: 32.3353vh;
+    position: absolute;
+    bottom:11.52%;
+}
+#page4 .p4_anima1_on{
+    left:16.18%;
+    transition:0.5s 1s;
+}
 #page4>.arrow{
     background: #ff5ac0;
-    box-shadow: 3.8vw 0 #ff5ac0,7.6vw 0 #ff5ac0,0 -2vh #ff5ac0,0 -4vh #ff5ac0;
+    box-shadow: 3.8vw 0 #ff5ac0,7.6vw 0 #ff5ac0,0 -2.2vh #ff5ac0,0 -4.4vh #ff5ac0;
 }
 /*page5*/
 #page5>.bg{
@@ -200,9 +297,45 @@ body,html{
     background: url("../images/pg5_packNum.png") no-repeat center center;
     background-size: 100%;
 }
+#page5 .p5_anima1{
+    width:28.2493vw;
+    height:20.9580vh;
+    position: absolute;
+    top:42.06%;
+    left:-120px;//这里单位需要改动一下
+}
+#page5 .p5_anima1_on{
+    left:13%;
+    transition:0.5s 1s;
+}
+/*之后再加动画*/
+/*#page5 .p5_anima2{
+    width:49.0716vw;
+    height: 19.1616vh;
+    bottom:10.02%;
+    left:11.14%;
+    position: absolute;
+}
+#page5 .p5_anima3{
+    width: 45.6233vw;
+    height: 29.1167vh;
+    position: absolute;
+    top:48.95%;
+    right:15.6%;
+}
+#page5 .p5_anima4{
+
+}*/
+#page5 .pg_anima2{
+    width: 73.2095vw;
+    height: 40.5688vh;
+    position: absolute;
+    bottom: 10.63%;
+    left:10.07%;
+}
 #page5>.arrow{
     background: #ffd31a;
-    box-shadow: 3.8vw 0 #ffd31a,7.6vw 0 #ffd31a,0 -2vh #ffd31a,0 -4vh #ffd31a;
+    box-shadow: 3.8vw 0 #ffd31a,7.6vw 0 #ffd31a,0 -2.2vh #ffd31a,0 -4.4vh #ffd31a;
 }
 /*page6*/
 #page6>.bg{
@@ -215,9 +348,90 @@ body,html{
     background: url("../images/pg6_searNum.png") no-repeat center center;
     background-size: 100%;
 }
+
+#page6 .p6_anima1{
+    width:28.2493vw;
+    height:20.9580vh;
+    position: absolute;
+    top:42.06%;
+    left:-120px;//这里需要改动一下
+}
+#page6 .p6_anima1_on{
+    left:12%;
+    transition:0.5s 1s;
+}
+#page6 .p6_anima2{
+    width:80.7692vw;
+    height: 38.2485vh;
+    position: absolute;
+    left:10.87%;
+    bottom:11.97%;
+    /*-webkit-animation:thefadeIn 3s linear infinite alternate;
+    animation:thefadeIn 3s linear infinite alternate;*/
+}
+/*@-webkit-keyframes thefadeIn {
+0% {
+opacity: 1; 
+}
+50% {
+opacity: 0.8;
+transform: translateY(1.49vh);
+}
+100% {
+opacity: 1;
+}
+@keyframes fadeIn {
+0% {
+opacity: 1; 
+}
+50% {
+opacity: 0.8;
+transform:translateY(1.49vh);
+}
+100% {
+opacity: 1;
+}*/
+}
+/*第六屏中的动画效果*/
+/*#page6 .p6_anima2{
+    width:80.7692vw;
+    height: 38.2485vh;
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:12.27%;
+    margin:auto;
+    background: url("../images/pg6_member.png") no-repeat center center;
+    background-size: 100%;
+    -webkit-animation:thefadeIn 3s linear infinite alternate;
+    animation:thefadeIn 3s linear infinite alternate;
+}
+@-webkit-keyframes thefadeIn {
+0% {
+opacity: 1; 
+}
+50% {
+opacity: 0.8;
+transform: translateY(20px);
+}
+100% {
+opacity: 1;
+}
+@keyframes fadeIn {
+0% {
+opacity: 1; 
+}
+50% {
+opacity: 0.8;
+transform:translateY(20px);
+}
+100% {
+opacity: 1;
+}
+}*/
 #page6>.arrow{
     background: #f998a6;
-    box-shadow: 3.8vw 0 #f998a6,7.6vw 0 #f998a6,0 -2vh #f998a6,0 -4vh #f998a6;
+    box-shadow: 3.8vw 0 #f998a6,7.6vw 0 #f998a6,0 -2.2vh #f998a6,0 -4.4vh #f998a6;
 }
 /*page7*/
 #page7>.bg{
@@ -257,10 +471,55 @@ body,html{
         transform:rotate(360deg);
     }
 }
+#page7 .p7_anima1{
+    width: 86.3395vw;
+    height: 30.3892vh;
+    position: absolute;
+    left:5.83%;
+    bottom:15.56%;
+}
 /*page8*/
 #page8>.bg{
     background:url("../images/pg8_bg.jpg") no-repeat center center;
     background-size: 100%;
+}
+#page8 .outer{
+    width:49.3368vw;
+    height: 5.9131vh;
+    position: absolute;
+    left:0;
+    right: 0;
+    bottom:4.64%;
+    margin:auto;
+    background-color: red;
+    /*text-align:center;*/
+}
+#page8 .outer .sharp{
+    width: 30.9018vw;
+    height: 5.9131vh;
+    background:#000;
+    display: inline-block;
+    position:absolute;
+}
+#page8 .outer .sharp:before{
+    content:"";
+    width:0;
+    border-bottom: 2.95655vh solid transparent;
+    border-top: 2.95655vh solid transparent;
+    border-right: 1.478275vh solid #000;
+    position: absolute;
+    left:-1.2vh;
+    top:0;
+}
+#page8 .outer .sharp:after{
+    content:"";
+    width:0;
+    border-bottom: 2.95655vh solid transparent;
+    border-top: 2.95655vh solid transparent;
+    border-left: 1.478275vh solid #000;
+    position: absolute;
+    right:-1.2vh;
+    top:0;
 }
 /*page9*/
 #page9>.bg{
