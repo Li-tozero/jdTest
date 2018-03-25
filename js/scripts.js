@@ -52,7 +52,6 @@ window.onload=function(){
             if(n>len-1) n=len-1;
             //重定位
             box2.style.transform = 'translateY(' + (-n * 10) + '%)'; //根据百分比位置移动页面
-
         };
         //touch事件绑定
         box.addEventListener("touchstart", function(event) {

@@ -40,6 +40,15 @@ body,html{
     top:0;
     left:0;
 }
+.page>.words{
+    
+    position: absolute;
+    top:23.57%;
+    left:0;
+    right:0;
+    margin:auto;
+    
+}
 /*logo*/
 .page>.logo{
     width:16.9761vw;
@@ -139,6 +148,13 @@ body,html{
     background:url("../images/pg2_bg.jpg") no-repeat center center;
     background-size: 100%;
 }
+.page>.word1{
+    width:43.6339vw;
+    height:9.8054vh;
+    background: url("../images/pg2_spend.png") no-repeat center center;
+    background-size: 100%;
+}
+
 #page2>.arrow{
     background: #ffbf19;
     box-shadow: 3.8vw 0 #ffbf19,7.6vw 0 #ffbf19,0 -2vh #ffbf19,0 -4vh #ffbf19;
@@ -146,6 +162,12 @@ body,html{
 /*page3*/
 #page3>.bg{
     background:url("../images/pg3_bg.jpg") no-repeat center center;
+    background-size: 100%;
+}
+.page>.word2{
+    width:29.1777vw;
+    height:9.5808vh;
+    background: url("../images/pg3_save.png") no-repeat center center;
     background-size: 100%;
 }
 #page3>.arrow{
@@ -157,6 +179,12 @@ body,html{
     background:url("../images/pg4_bg.jpg") no-repeat center center;
     background-size: 100%;
 }
+.page>.word3{
+    width:65.7825vw;
+    height:14.6706vh;
+    background: url("../images/pg4_buy.png") no-repeat center center;
+    background-size: 100%;
+}
 #page4>.arrow{
     background: #ff5ac0;
     box-shadow: 3.8vw 0 #ff5ac0,7.6vw 0 #ff5ac0,0 -2vh #ff5ac0,0 -4vh #ff5ac0;
@@ -166,6 +194,12 @@ body,html{
     background:url("../images/pg5_bg.jpg") no-repeat center center;
     background-size: 100%;
 }
+.page>.word4{
+    width:35.8090vw;
+    height:14.5209vh;
+    background: url("../images/pg5_packNum.png") no-repeat center center;
+    background-size: 100%;
+}
 #page5>.arrow{
     background: #ffd31a;
     box-shadow: 3.8vw 0 #ffd31a,7.6vw 0 #ffd31a,0 -2vh #ffd31a,0 -4vh #ffd31a;
@@ -173,6 +207,12 @@ body,html{
 /*page6*/
 #page6>.bg{
     background:url("../images/pg6_bg.jpg") no-repeat center center;
+    background-size: 100%;
+}
+.page>.word5{
+    width:62.4668vw;
+    height:9.4311vh;
+    background: url("../images/pg6_searNum.png") no-repeat center center;
     background-size: 100%;
 }
 #page6>.arrow{
