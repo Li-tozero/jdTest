@@ -1,0 +1,237 @@
+/*all tag*/
+*{
+	margin:0;
+	padding;
+	border:none;
+	font-size:1.3263vw;
+	font-family: "Microsoft Yahei";
+}
+body,html{
+    height:100%;
+}
+.wrapper{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.pages{
+    width:100%;
+    height:1000%;
+    transition: 0.3s linear;
+}
+.page{
+    position:relative;
+    width:100%;
+    height:10%;
+}
+.page >.bg{
+    /*不能设置为这种定位*/
+    /*position:absolute;*/
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+/*header*/
+.page>.header{
+    width:100%;
+    height:10.7784vh;
+    background-color:white;
+    position: absolute;
+    top:0;
+    left:0;
+}
+/*logo*/
+.page>.logo{
+    width:16.9761vw;
+    height:5.9880vh;
+    position:absolute;
+    top:11.9%;
+    right:0;
+    left:0;
+    margin:auto;
+    background:url("../images/logo.png") no-repeat center top;
+    background-size: 100%;
+}
+.page>.arrow{
+    width:3.4482vw;
+    height:1.7964vh;
+    position: absolute;
+    left:2.25%;
+    right:0;
+    bottom:4.64%;
+    margin:auto;
+    -webkit-transform-origin:0 100%;
+    transform-origin:0 100%;
+    -webkit-transform:rotate(-45deg);
+    transform: rotate(-45deg);
+    background: #ffffff;
+    box-shadow: 3.8vw 0 #ffffff,7.6vw 0 #ffffff,0 -2vh #ffffff,0 -4vh #ffffff;
+    -webkit-animation:arrow 2s linear infinite;
+    animation:arrow 2s linear infinite;
+}
+@keyframes arrow{
+    0%{
+        transform: rotate(-45deg) translate(0,0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(-45deg) translate(-2rem,2rem);
+        opacity:0;
+    }
+}
+/*page1*/
+#page1 >.bg{
+    background:url("../images/pg1_bg.png") no-repeat center center #e81305;
+    background-size: 100%;
+}
+#page1>.p1_secrete{
+    display:block;
+    width:25.4642vw;
+    height:16.9162vh;
+    position:absolute;
+    right:17.5%;
+    top:49.4%;
+    background:url("../images/pg1_screte.png") no-repeat center center;
+    background-size: 100%;
+    -webkit-animation:p1_secrete 2s linear infinite alternate;
+    animation:p1_secrete 2s linear infinite alternate;
+}
+@-webkit-keyframes p1_secrete{
+    0%{
+        opacity:1;
+        -webkit-transform:scale(0.6,0.6);
+        transform: scale(0.6,0.6);
+    }
+    50%{
+        opacity:0.8;
+        -webkit-transform:scale(0.8,0.8);
+        transform:scale(0.8,0.8);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform:scale(1,1);
+        transform:scale(1,1);
+    }
+}
+@keyframes p1_secrete{
+    0%{
+        opacity:1;
+        -webkit-transform:scale(0.6,0.6);
+        transform: scale(0.6,0.6);
+    }
+    50%{
+        opacity:0.8;
+        -webkit-transform:scale(0.8,0.8);
+        transform:scale(0.8,0.8);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform:scale(1,1);
+        transform:scale(1,1);
+    }
+}
+
+/*page2*/
+#page2>.bg{
+    background:url("../images/pg2_bg.jpg") no-repeat center center;
+    background-size: 100%;
+}
+#page2>.arrow{
+    background: #ffbf19;
+    box-shadow: 3.8vw 0 #ffbf19,7.6vw 0 #ffbf19,0 -2vh #ffbf19,0 -4vh #ffbf19;
+}
+/*page3*/
+#page3>.bg{
+    background:url("../images/pg3_bg.jpg") no-repeat center center;
+    background-size: 100%;
+}
+#page3>.arrow{
+    background: #efef00;
+    box-shadow: 3.8vw 0 #efef00,7.6vw 0 #efef00,0 -2vh #efef00,0 -4vh #efef00;
+}
+/*page4*/
+#page4>.bg{
+    background:url("../images/pg4_bg.jpg") no-repeat center center;
+    background-size: 100%;
+}
+#page4>.arrow{
+    background: #ff5ac0;
+    box-shadow: 3.8vw 0 #ff5ac0,7.6vw 0 #ff5ac0,0 -2vh #ff5ac0,0 -4vh #ff5ac0;
+}
+/*page5*/
+#page5>.bg{
+    background:url("../images/pg5_bg.jpg") no-repeat center center;
+    background-size: 100%;
+}
+#page5>.arrow{
+    background: #ffd31a;
+    box-shadow: 3.8vw 0 #ffd31a,7.6vw 0 #ffd31a,0 -2vh #ffd31a,0 -4vh #ffd31a;
+}
+/*page6*/
+#page6>.bg{
+    background:url("../images/pg6_bg.jpg") no-repeat center center;
+    background-size: 100%;
+}
+#page6>.arrow{
+    background: #f998a6;
+    box-shadow: 3.8vw 0 #f998a6,7.6vw 0 #f998a6,0 -2vh #f998a6,0 -4vh #f998a6;
+}
+/*page7*/
+#page7>.bg{
+    background:url("../images/pg7_bg.jpg") no-repeat center center;
+    background-size: 100%;
+}
+#page7>.circle{
+    width:48.5411vw;
+    height:27.6946vh;
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:14.35%;
+    margin:auto;
+    background:url("../images/pg7_circle.png") no-repeat center center;
+    background-size: 100%;
+    -webkit-animation:circle 2s linear infinite;
+    animation:circle 2s linear infinite;
+}
+@-webkit-keyframes circle{
+    0%{
+        -webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform:rotate(360deg);
+        transform:rotate(360deg);
+    }
+}
+@keyframes circle{
+    0%{
+        -webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform:rotate(360deg);
+        transform:rotate(360deg);
+    }
+}
+/*page8*/
+#page8>.bg{
+    background:url("../images/pg8_bg.jpg") no-repeat center center;
+    background-size: 100%;
+}
+/*page9*/
+#page9>.bg{
+    background:url("../images/pg9_bg.jpg") no-repeat center center;
+    background-size: 100%;
+}
+/*page10*/
+#page10>.bg{
+    background:url("../images/pg10_bg.jpg") no-repeat center center;
+    background-size: 100%;
+}
+
+
+
